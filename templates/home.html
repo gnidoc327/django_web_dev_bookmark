@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}home.html{% endblock %}
+
+{% block content %}
+    <div id="content">
+        <table id="applist">
+            <tr>
+                <td><b><i><a href="{% url 'bookmark:index' %}">Bookmark</a></i></b></td>
+            </tr>
+            <tr>
+                <td><b><i><a href="{% url 'blog:index' %}">Blog</a></i></b></td>
+            </tr>
+        </table>
+    </div>
+{% endblock content %}
+
+{% block footer %}
+    <div id="footer">
+        This is Footer area.
+    </div>
+{% endblock footer %}
